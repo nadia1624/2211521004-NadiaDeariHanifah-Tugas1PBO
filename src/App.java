@@ -5,6 +5,7 @@ public class App {
 
         Scanner scanner = new Scanner(System.in);
 
+        // Polimorfisme
         Member member1 = new MemberReguler();
         Member member2 = new MemberSilver();
         Member member3 = new MemberGold();
@@ -45,7 +46,7 @@ public class App {
         // Member Platinum
         System.out.print("Masukkan total belanja Member Platinum:Rp. ");
         int belanja4 = scanner.nextInt();
-        System.out.print("Masukkan jarak tujuan Member Platinum:Rp. ");
+        System.out.print("Masukkan jarak tujuan Member Platinum: ");
         int jarak4 = scanner.nextInt();
         int totalBayar4 = member4.hitungTotalBayar(belanja4);
         double jarakTujuan4 = platinumMember.hitungOngkir(jarak4);
